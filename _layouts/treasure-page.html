@@ -8,5 +8,29 @@ layout: default
 
   <div class="entry">
     {{ content }}
-  </div>
+    </div>
+    <div>
+      <input id="treasureInput" class="treasure-input"></input>
+    </div>
+    <div>
+      <button onclick="myFunction()">SUBMIT</button>
+    </div>
+    <div>
+      <a id="continue"></a>
+    </div>
+
+    <script>
+      function myFunction() {
+        var treasureInput = document.getElementById("treasureInput").value;
+        var treasureInput = treasureInput.toLowerCase();
+        var response;
+        if(treasureInput == "treasure chest"){
+          response = "Correct! Click Here to Continue!";
+          document.getElementById("continue").href = "/maze-challenge";
+        } else {
+          response = "Sorry that's not right, try again!";
+        }
+        document.getElementById("continue").innerHTML = response;
+      }
+      </script>      
 </article>
