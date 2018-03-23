@@ -41,10 +41,5 @@ Click the button below to see what information you get from the search:
 <button name="button" onclick="https://mknawalaniec.github.io/spotify-search/">Search for Run the World</button>
 
 
-### Let's Get To Work!
 
-Click the link below to begin. Once you've found what you're looking for, come back to this page to answer the question below. 
-
-<a href="http://localhost:8888/" target="_blank">Start Challenge</a>
-
-### What is the popularity number of the song you just found?
+### Enter the correct number to complete the challenge.
