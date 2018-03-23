@@ -26,9 +26,11 @@ layout: default
         var response;
         if(treasureInput == "treasure chest"){
           response = "Correct! Click Here to Continue!";
+          document.getElementById("continue").style.color = "#59bfe5";
           document.getElementById("continue").href = "/maze-challenge";
         } else {
           response = "Sorry that's not right, try again!";
+          document.getElementById("continue").style.color = "red";
         }
         document.getElementById("continue").innerHTML = response;
       }

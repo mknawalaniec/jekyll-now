@@ -27,8 +27,10 @@ layout: default
       if(htmlInput == 2){
         response = "Correct! Click Here to Continue!";
         document.getElementById("continue").href = "/final";
+        document.getElementById("continue").style.color = "#59bfe5";
       } else {
         response = "Sorry that's not right, try again!";
+        document.getElementById("continue").style.color = "red";
       }
       document.getElementById("continue").innerHTML = response;
     }
