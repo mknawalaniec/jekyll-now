@@ -9,5 +9,30 @@ layout: default
   <div class="entry">
     {{ content }}
   </div>
+
+  <div>
+    <input id="mazeInput" class="maze-input"></input>
+  </div>
+  <div>
+    <button onclick="myFunction()">SUBMIT</button>
+  </div>
+  <div>
+    <a id="continue"></a>
+  </div>
+
+  <script>
+    function myFunction() {
+      var mazeInput = document.getElementById("mazeInput").value;
+      var response;
+      if(mazeInput == 3){
+        response = "Correct! Click Here to Continue!";
+        document.getElementById("continue").href = "/api-challenge";
+      } else {
+        response = "Sorry that's not right, try again!";
+      }
+      document.getElementById("continue").innerHTML = response;
+    }
+    </script> 
+
   </article>
   

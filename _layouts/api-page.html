@@ -9,4 +9,29 @@ layout: default
   <div class="entry">
     {{ content }}
   </div>
+
+  <div>
+    <input id="apiInput" class="api-input"></input>
+  </div>
+  <div>
+    <button onclick="myFunction()">SUBMIT</button>
+  </div>
+  <div>
+    <a id="continue"></a>
+  </div>
+
+  <script>
+    function myFunction() {
+      var apiInput = document.getElementById("apiInput").value;
+      var response;
+      if(apiInput == 3){
+        response = "Correct! Click Here to Continue!";
+        document.getElementById("continue").href = "/html-challenge";
+      } else {
+        response = "Sorry that's not right, try again!";
+      }
+      document.getElementById("continue").innerHTML = response;
+    }
+    </script> 
+
 </article>
