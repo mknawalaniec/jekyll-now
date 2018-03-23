@@ -9,4 +9,29 @@ layout: default
   <div class="entry">
     {{ content }}
   </div>
+
+  <div>
+    <input id="htmlInput" class="html-input"></input>
+  </div>
+  <div>
+    <button onclick="myFunction()">SUBMIT</button>
+  </div>
+  <div>
+    <a id="continue"></a>
+  </div>
+
+  <script>
+    function myFunction() {
+      var htmlInput = document.getElementById("htmlInput").value;
+      var response;
+      if(htmlInput == 3){
+        response = "Correct! Click Here to Continue!";
+        document.getElementById("continue").href = "/final";
+      } else {
+        response = "Sorry that's not right, try again!";
+      }
+      document.getElementById("continue").innerHTML = response;
+    }
+    </script> 
+
   </article>

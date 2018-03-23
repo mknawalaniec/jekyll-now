@@ -15,19 +15,7 @@ Click on the editor in order to navigate between the HTML and CSS files.
         height="400px"
         style="margin: 0 auto; display: block; margin-left:-25%;" onload="access()" id="preview"></iframe>
 
-<div class="form-group" style="padding-top: 40px;">
-  <div"edit">How many lines did you edit to change entire color of the fish?</div>
-  <input type="test" class="form-control" id="edit">
-        <button onclick="verifyAnswer()">Submit Answer</button>
-</div>
-<script>
-function verifyAnswer(){
-        if(document.getElementById("edit").value == 3){
-                alert("Correct"); // edit to changing the href
-        } else {
-                alert("Try again!");
-        }
-}
-</script>
 
 
+
+### How many lines did you edit to change the color of the fish?
