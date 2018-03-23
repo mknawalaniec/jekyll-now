@@ -5,9 +5,8 @@ permalink: /spotify-search/
 ---
 
 ```json
-{
-  "tracks": {
-    "items": [
+  "tracks": 
+    "items": 
         "album":
           "name": "4",
           "release_date": "2011"
