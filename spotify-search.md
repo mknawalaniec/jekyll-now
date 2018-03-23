@@ -7,39 +7,23 @@ permalink: /spotify-search/
 ```json
 {
   "tracks": {
-    "href": "https://api.spotify.com/v1/search?query=Run+the+World&type=track&market=US&offset=0&limit=2",
     "items": [
-      {
-        "album": {
+        "album":
           "name": "4",
           "release_date": "2011"
-        },
-        "artists": [
-          {
-            "name": "Beyoncé",
-          }
-        ],
+        "artists": 
+            "name": "Beyoncé"
         "name": "Run the World (Girls)",
         "popularity": 77
-      },
-      {
-        "album": {
+
+        "album": 
           "name": "Time",
           "release_date": "2017-07-07"
-        },
         "artists": [
-          {
             "name": "CAZZETTE"
-          },
-          {
             "name": "Nadia Gattas"
-          }
-        ],
         "name": "Run The World",
         "popularity": 53
-      }
-    ]
-}
 ```
 
 ### Let's Get To Work!
