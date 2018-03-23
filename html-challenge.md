@@ -22,7 +22,7 @@ function access() {
    console.log(innerDoc.getElementsByClassName("fin")[0].style.backgroundColor);
    console.log(innerDoc.getElementsByClassName("fish-body")[0].style.backgroundColor);
    console.log(innerDoc.getElementsByClassName("fin")[1].style.backgroundColor);
-
+   console.log("hi");
 }
 </script>
 ### Navigating the editor
