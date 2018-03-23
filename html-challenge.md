@@ -1,5 +1,5 @@
 ---
-layout: api-page
+layout: html-page
 title: HTML and CSS Challenge
 permalink: /html-challenge/
 ---
