@@ -10,7 +10,7 @@ Use the code editor below to modify the body of the fish to an orange color.
         frameborder="0"
         width="150%"
         height="400px"
-        style="margin: 0 auto; display: block; margin-left:-25%;" onload="access()"></iframe>
+        style="margin: 0 auto; display: block; margin-left:-25%;" onload="access()" id="preview"></iframe>
 
 <div id="test"></div>
 
