@@ -9,4 +9,65 @@ layout: default
   <div class="entry">
     {{ content }}
   </div>
+
+  
+  <div id="firstDiv">
+    <div>What did the Octopus say you would find once you made it to shore?</div>
+    <input id="answer"></input>
+    <div><button onclick="firstFunction()">Submit</button></div>
+    <div id="continue"></div>
+  </div>
+
+  
+  <div id="chestDiv" class="chestDiv">
+    <div>Now use the other numbers you entered in the ocean to help open your treasure chest!</div>
+    <p style="font-size: 14px">Hint: <br>How many loops did you use to get through the seaweed? <br>What was the popularity of the song you found?
+    <br>How many lines of code did you update to change the fish's color?</p>
+    <div id="chest" class="chest">
+      <img style="width:100%" src="https://vignette.wikia.nocookie.net/clubpenguin/images/8/8c/Treasure_Chest.PNG/revision/latest/scale-to-width-down/640?cb=20140412002150">
+      <input class="left" id="leftBox"></input>
+      <input class="centered" id="centerBox"></input>
+      <input class="right" id="rightBox"></input>
+      <button class="treasureButton" onclick=myFunction()></button>
+    </div>
+  </div>
+
+<div id="congrats" class="congrats">
+  <div>You did it</div>
+</div>
+
+<script>
+    function myFunction() {
+      var leftInput = document.getElementById("leftBox").value;
+      var centerInput = document.getElementById("centerBox").value;
+      var rightInput = document.getElementById("rightBox").value;
+      var response;
+      if((leftInput == 3) && (centerInput == 1) && (rightInput == 2)){
+        document.getElementById("congrats").style.display = "block";
+        document.getElementById("chestDiv").style.display = "none";
+        
+      } else {
+        document.getElementById("leftBox").style.borderColor = "red";
+        document.getElementById("leftBox").style.borderWidth = "4px";
+        document.getElementById("centerBox").style.borderColor = "red";
+        document.getElementById("centerBox").style.borderWidth = "4px";
+        document.getElementById("rightBox").style.borderColor = "red";
+        document.getElementById("rightBox").style.borderWidth = "4px";
+      }
+    }
+
+    function firstFunction(){
+      var treasureInput = document.getElementById("answer").value;
+        var treasureInput = treasureInput.toLowerCase();
+        var response;
+        if(treasureInput == "treasure chest"){
+          document.getElementById("firstDiv").style.display = "none";
+          document.getElementById("chestDiv").style.display = "block";
+        } else {
+          document.getElementById("continue").innerHTML = "Sorry that's not right, try again!";
+        }
+        
+    }
+    </script> 
+
 </article>

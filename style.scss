@@ -310,6 +310,76 @@ footer {
   text-align: center;
 }
 
+/* Container holding the image and the text */
+.chest {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Left */
+.left {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  height: 20%;
+  font-size: 40px;
+  width: 15%;
+  text-align: center;
+}
+
+/* Right */
+.right {
+  position: absolute;
+  top: 30%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  height: 20%;
+  font-size: 40px;
+  width: 15%;
+  text-align: center;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 20%;
+  font-size: 40px;
+  width: 15%;
+  text-align: center;
+}
+
+.chestDiv {
+  display: none;
+}
+
+.congrats {
+  display: none;
+}
+
+.treasureButton {
+  position: absolute;
+  top: 58%;
+  left: 43%;
+  width: 90px;
+  height: 80px;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+input {
+  height: 30px;
+  width: 206px;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
