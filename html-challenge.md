@@ -16,7 +16,7 @@ Use the code editor below to modify the body of the fish to an orange color.
 
 <script>
 function access() {
-   var iframe = document.getElementById("iframe");
+   var iframe = document.getElementById("preview");
    var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
    console.log(innerDoc.body);
    console.log(innerDoc.getElementsByClassName("fin")[0].style.backgroundColor);
