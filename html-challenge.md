@@ -16,27 +16,18 @@ Click on the editor in order to navigate between the HTML and CSS files.
         style="margin: 0 auto; display: block; margin-left:-25%;" onload="access()" id="preview"></iframe>
 
 <div class="form-group" style="padding-top: 40px;">
-  <label for="edit">How many lines did you edit to change entire color of the fish?</label>
+  <div"edit">How many lines did you edit to change entire color of the fish?</div>
   <input type="test" class="form-control" id="edit">
         <button onclick="verifyAnswer()">Submit Answer</button>
 </div>
 <script>
 function verifyAnswer(){
         if(document.getElementById("edit").value == 3){
-                alert("Correct");
+                alert("Correct"); // edit to changing the href
         } else {
-                alert("Incorrect!");
+                alert("Try again!");
         }
 }
-        /*
-function access() {
-   var iframe = document.getElementById("preview");
-   var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
-   console.log(innerDoc.body);
-   console.log(innerDoc.getElementsByClassName("fin")[0].style.backgroundColor);
-   console.log(innerDoc.getElementsByClassName("fish-body")[0].style.backgroundColor);
-   console.log(innerDoc.getElementsByClassName("fin")[1].style.backgroundColor);
-}*/
 </script>
 
 
