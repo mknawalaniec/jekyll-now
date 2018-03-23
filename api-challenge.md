@@ -36,49 +36,14 @@ https://api.spotify.com/v1/search?q=Run%20the%20World&type=track&market=US **&li
 Our final URL that we will use for our search is:
 https://api.spotify.com/v1/search?q=Run%20the%20World&type=track&market=US&limit=2
 
-
 Click the button below to see what information you get from the search:
-<input type="text" id="url" value="https://api.spotify.com/v1/search?q=Run%20the%20World&type=track&market=US&limit=2"/>[Search]
-{
-  "tracks": {
-    "href": "https://api.spotify.com/v1/search?query=Run+the+World&type=track&market=US&offset=0&limit=2",
-    "items": [
-      {
-        "album": {
-          "name": "4",
-          "release_date": "2011"
-        },
-        "artists": [
-          {
-            "name": "Beyoncé",
-          }
-        ],
-        "name": "Run the World (Girls)",
-        "popularity": 77
-      },
-      {
-        "album": {
-          "name": "Time",
-          "release_date": "2017-07-07"
-        },
-        "artists": [
-          {
-            "name": "CAZZETTE"
-          },
-          {
-            "name": "Nadia Gattas"
-          }
-        ],
-        "name": "Run The World",
-        "popularity": 53
-      }
-    ]
-}
+
+<button name="button" onclick="https://mknawalaniec.github.io/spotify-search/">Search for Run the World</button>
 
 
 ### Let's Get To Work!
 
-Click the link below to begin. 
+Click the link below to begin. Once you've found what you're looking for, come back to this page to answer the question below. 
 
 <a href="http://localhost:8888/" target="_blank">Start Challenge</a>
 
