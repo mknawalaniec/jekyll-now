@@ -38,7 +38,7 @@ https://api.spotify.com/v1/search?q=Run%20the%20World&type=track&market=US&limit
 
 Click the button below to see what information you get from the search:
 
-<button name="button" onclick="https://mknawalaniec.github.io/spotify-search/">Search for Run the World</button>
+<button name="button" (onClick)="https://mknawalaniec.github.io/spotify-search/">Search for Run the World</button>
 
 
 
