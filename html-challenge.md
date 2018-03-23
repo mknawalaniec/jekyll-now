@@ -12,9 +12,15 @@ Use the code editor below to modify the body of the fish to an orange color.
         height="400px"
         style="margin: 0 auto; display: block; margin-left:-25%;" onload="access()" id="preview"></iframe>
 
-<div id="test"></div>
-
+<div class="form-group">
+  <label for="edit">How many lines did you end?</label>
+  <input type="test" class="form-control" id="edit">
+        <button onclick="verifyAnswer()">Click me</button>
+</div>
 <script>
+function verifyAnswer(){
+        console.log(document.getElementById("edit").value);
+}
         /*
 function access() {
    var iframe = document.getElementById("preview");
