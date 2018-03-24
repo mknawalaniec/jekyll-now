@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: search-page
 title: Search Results
 permalink: /spotify-search/
 ---
