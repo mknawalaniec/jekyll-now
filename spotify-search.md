@@ -6,7 +6,7 @@ permalink: /spotify-search/
 
 ```json
   "tracks": 
-    "items": 
+    "items": {
         "album":
           "name": "4",
           "release_date": "2011"
@@ -14,7 +14,7 @@ permalink: /spotify-search/
             "name": "Beyoncé"
         "name": "Run the World (Girls)",
         "popularity": 77
-
+    },{
         "album": 
           "name": "Time",
           "release_date": "2017-07-07"
@@ -23,6 +23,7 @@ permalink: /spotify-search/
             "name": "Nadia Gattas"
         "name": "Run The World",
         "popularity": 53
+     }
 ```
 
 ### Let's Get To Work!
