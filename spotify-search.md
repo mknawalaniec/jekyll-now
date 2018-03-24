@@ -27,7 +27,3 @@ permalink: /spotify-search/
 ```
 
 ### Let's Get To Work!
-
-Click the link below to begin. 
-
-<a href="http://localhost:8888/" target="_blank">Start Challenge</a>
