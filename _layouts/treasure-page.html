@@ -8,15 +8,24 @@ layout: default
 
   <div class="entry">
     {{ content }}
+  </div>
+
+    <div id="intro" style="text-align:center; margin:15px;">
+      <button onclick="show()">All Done!</button>
     </div>
-    <div style="text-align:center">
-      <input id="treasureInput" class="treasure-input"></input>
-    </div>
-    <div style="text-align:center">
-      <button onclick="myFunction()">SUBMIT</button>
-    </div>
-    <div style="text-align:center; margin:15px;">
-      <a id="continue"></a>
+    
+
+    <div id="bigTreasure" style="display:none">
+      <div>What was on the red card you used to complete the Rules of the Ocean?</div>
+      <div style="text-align:center">
+        <input id="treasureInput" class="treasure-input"></input>
+      </div>
+      <div style="text-align:center">
+        <button onclick="myFunction()">SUBMIT</button>
+      </div>
+      <div style="text-align:center; margin:15px;">
+        <a id="continue"></a>
+      </div>
     </div>
 
     <script>
@@ -34,5 +43,11 @@ layout: default
         }
         document.getElementById("continue").innerHTML = response;
       }
+
+      function show(){
+        document.getElementById("intro").style.display = "none";
+        document.getElementById("bigTreasure").style.display = "block";
+      }
+
       </script>      
 </article>
