@@ -25,5 +25,3 @@ permalink: /spotify-search/
         "popularity": 53
      }
 ```
-
-### Let's Get To Work!
