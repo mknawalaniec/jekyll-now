@@ -10,6 +10,87 @@ layout: default
     {{ content }}
   </div>
 
+  <div class="section">
+    <div class="h3">How does the Spotify API work?</div>
+    A website address usually looks something like:
+    <a href="https://www.spotify.com/us"></a>
+  </div>
+
+  <div class="section">
+    <div class="h2">
+      You can use the Spotify API to get information about songs, albumbs, artists, and more.
+    </div>
+    <div class="h3">
+      I want to search Spotify for the song called *Run the World*. So, now I have to figure out what my URL should be to request
+      the right information from Spotify.
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="h3">
+      This is the URL every search request will start with:
+    </div>
+    <div class="spotify-link">
+      https://api.spotify.com/v1/search
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="h3">
+      Let's tell Spotify the title of the song we're looking for:
+    </div>
+    <div class="spotify-link">
+      https://api.spotify.com/v1/search?q=Run%20the%20World
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="h3">
+      Let's tell Spotify that we are searching for a track:
+    </div>
+    <div class="spotify-link">
+      https://api.spotify.com/v1/search?q=Run%20the%20World&type=track
+    </div>
+    each time we want to add detail to our search, we use "&"
+  </div>
+
+  <div class="section">
+    <div class="h3">
+      Let's tell Spotify that we are searching for a track:
+    </div>
+    <div class="spotify-link">
+      https://api.spotify.com/v1/search?q=Run%20the%20World&type=track
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="h3">
+      Let's tell Spotify that we only want songs from the United States:
+    </div>
+    <div class="spotify-link">
+      https://api.spotify.com/v1/search?q=Run%20the%20World&type=track&market=US
+    </div>
+  </div>
+
+
+  <div class="section">
+    <div class="h3">
+      Let's tell Spotify we only want to see *2* songs in the search result:
+    </div>
+    <div class="spotify-link">
+      https://api.spotify.com/v1/search?q=Run%20the%20World&type=track&market=US&limit=2
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="h3">
+      Our final URL that we will use for our search is:
+    </div>
+    <div class="spotify-link">
+      https://api.spotify.com/v1/search?q=Run%20the%20World&type=track&market=US&limit=2
+    </div>
+  </div>
+
   <div class="h3">
     Click the button below to see what information you get from the search:
   </div>
