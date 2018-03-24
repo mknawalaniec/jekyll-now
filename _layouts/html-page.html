@@ -10,6 +10,13 @@ layout: default
     {{ content }}
   </div>
 
+  <div id="intro" style="text-align:center; margin:15px;">
+    <div>Once you're finished, have one of the leaders check to make sure the fish's color changed!</div>
+      <button onclick="show()">All Done!</button>
+    </div>
+
+  <div id="bigHTML" style="display:none; margin:15px">
+  <div>How many lines did you edit to change the color of the fish?</div>
   <div style="text-align:center;">
     <input id="htmlInput" class="html-input"></input>
   </div>
@@ -19,6 +26,7 @@ layout: default
   <div style="text-align:center; margin:15px;">
     <a id="continue"></a>
   </div>
+</div>
 
   <script>
     function myFunction() {
@@ -34,6 +42,11 @@ layout: default
       }
       document.getElementById("continue").innerHTML = response;
     }
+
+          function show(){
+        document.getElementById("intro").style.display = "none";
+        document.getElementById("bigHTML").style.display = "block";
+      }
     </script> 
 
   </article>

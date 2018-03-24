@@ -10,6 +10,12 @@ layout: default
     {{ content }}
   </div>
 
+  <div id="intro" style="text-align:center; margin:15px;">
+      <button onclick="show()">All Done!</button>
+  </div>
+
+  <div id="bigMaze" style="display:none">
+    <div>How many loops structures did you have to use to find your way through the seaweed?</div>
   <div style="text-align:center">
     <input id="mazeInput" class="maze-input"></input>
   </div>
@@ -19,6 +25,7 @@ layout: default
   <div style="text-align:center; margin:15px;">
     <a id="continue"></a>
   </div>
+</div>
 
   <script>
     function myFunction() {
@@ -34,6 +41,11 @@ layout: default
       }
       document.getElementById("continue").innerHTML = response;
     }
+
+      function show(){
+        document.getElementById("intro").style.display = "none";
+        document.getElementById("bigMaze").style.display = "block";
+      }
     </script> 
 
   </article>
