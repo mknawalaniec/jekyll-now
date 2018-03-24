@@ -1,5 +1,5 @@
----
-layout: default
+--- 
+layout: default 
 ---
 
 <article class="page">
@@ -10,6 +10,16 @@ layout: default
     {{ content }}
   </div>
 
+  <div class="centered">
+      Click the button below to see what information you get from the search: 
+    <div class="link-button">
+      <a href="https://mknawalaniec.github.io/spotify-search/" class="btn btn-default">Search for Run the World</a>
+    </div>
+  </div>
+
+  <div class="centered">
+    Enter the correct number to complete the challenge.
+  </div>
   <div>
     <input id="apiInput" class="api-input"></input>
   </div>
@@ -24,7 +34,7 @@ layout: default
     function myFunction() {
       var apiInput = document.getElementById("apiInput").value;
       var response;
-      if(apiInput == 3){
+      if (apiInput == 3) {
         response = "Correct! Click Here to Continue!";
         document.getElementById("continue").href = "/html-challenge";
         document.getElementById("continue").style.color = "#59bfe5";
@@ -34,6 +44,6 @@ layout: default
       }
       document.getElementById("continue").innerHTML = response;
     }
-    </script> 
+  </script>
 
 </article>

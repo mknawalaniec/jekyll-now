@@ -35,11 +35,3 @@ https://api.spotify.com/v1/search?q=Run%20the%20World&type=track&market=US **&li
 
 Our final URL that we will use for our search is:
 https://api.spotify.com/v1/search?q=Run%20the%20World&type=track&market=US&limit=2
-
-Click the button below to see what information you get from the search:
-
-<button name="button" (onClick)="https://mknawalaniec.github.io/spotify-search/">Search for Run the World</button>
-
-
-
-### Enter the correct number to complete the challenge.
