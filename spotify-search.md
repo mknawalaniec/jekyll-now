@@ -1,5 +1,5 @@
 ---
-layout: api-page
+layout: search-page
 title: Search Results
 permalink: /spotify-search/
 ---
@@ -31,15 +31,3 @@ permalink: /spotify-search/
 Click the link below to begin. 
 
 <a href="http://localhost:8888/" target="_blank">Start Challenge</a>
-
-
-
-
-
-
-
-
-
-
-
-###
